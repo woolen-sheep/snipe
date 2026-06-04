@@ -1,0 +1,48 @@
+# Copy this file to ~/.config/.snipe/config.yaml or pass it with --config.
+
+process:
+  # File or directory containing images.
+  source: null
+
+  # Optional output directory. Use null to update XMP in place; set a path to create tagged copies there.
+  output_dir: null
+
+  # Confidence threshold for bird detection.
+  conf: 0.35
+
+  # Number of parallel workers.
+  workers: 16
+
+  # Merge boxes when either box has at least this overlap ratio covered by another box.
+  detector_merge_overlap_threshold: 0.7
+
+  # Drop boxes smaller than this fraction of the largest detected box.
+  detector_min_box_area_ratio: 0.05
+
+  # Enable GPS-based bird species filtering.
+  gps_filter: true
+
+  # Force filtering by a specific region code such as CN or CN-11.
+  region_filter: null
+
+  # Display common names in the selected language: CN or US.
+  language: CN
+
+  # Generic keyword to write whenever a bird is detected. Set to null to disable.
+  bird_keyword: bird
+
+  # Logging level. Leave null to show the cross-worker progress bar instead of log lines.
+  log_level: null
+
+  # Run detection and classification without writing metadata.
+  dry_run: false
+
+preview:
+  # File or directory containing images.
+  source: null
+
+  # Logging level. Use null to suppress preview logs.
+  log_level: INFO
+
+  # Enable pywebview debug tools.
+  debug: false

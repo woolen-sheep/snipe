@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snipe Preview</title>
+  <link rel="icon" href="snipe.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="identity">
+      <span class="pill">Preview</span>
+      <div class="meta">
+        <div id="fileName" class="filename">No image loaded</div>
+        <div id="filePath" class="filepath">Select a directory or file to begin</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="btnPrev" class="ghost">&#x2190; Prev</button>
+      <button id="btnNext" class="ghost">Next &#x2192;</button>
+      <button id="btnReset" class="primary">Reset View</button>
+    </div>
+  </header>
+
+  <main id="viewer" class="viewer">
+    <div id="canvas" class="canvas">
+      <img id="photo" alt="Preview" />
+      <div id="overlays" class="overlays"></div>
+    </div>
+  </main>
+
+  <footer class="status">
+    <div id="statusText">Use arrow keys or buttons to navigate. Scroll to zoom, drag to pan.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

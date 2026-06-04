@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Temporary archived artifacts
+tmp/
+
+# Generated runtime artifacts
+output/
+snipe/web/preview/cache/
+
+# Local model inputs
+local_models/
+
+# Local docs and planning notes
+local_doc/
+
+# Local helper scripts
+local_tools/
